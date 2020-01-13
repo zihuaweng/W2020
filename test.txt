@@ -1,0 +1,5 @@
+SSH
+JDK Version, Language Level, Java Version, pom.xml maven-version
+spring-projects/spring-boot   https://github.com/spring-projects/spring-boot
+simple-java-maven-app  https://github.com/jenkins-docs/simple-java-maven-app
+alibaba/fastjson  https://github.com/alibaba/fastjson/issues
