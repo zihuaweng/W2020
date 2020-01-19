@@ -62,42 +62,40 @@
 
   + A3: 
   
-    We can think a fruit as a pellet whitch with a different point value. 
+    We can think a fruit as a pellet with a different point value. 
   
     1. Add a ***Fruit.java*** file to create Fruit class which should be similar to the Pellet class in file ***Pellet.java***.
-    
     2. In file ***PlayerCollisions.java***, add fruitColiding(),  functions  and playerVersusFruit() function to handle the actual case of player consuming a fruit.
+    3. In file ***LevelFactory.java***, add a createFruit() function to create a new fruit, like the createPellet() function.
     
-  3. In file ***LevelFactory.java***, add a createFruit() function to create a new fruit, like the createPellet() function.
-    
-       ```java
-       public Fruit createFruit() {
-           return new Fruit(FRUIT_VALUE, sprites.getFruitSprite());
-       }
-       ```
-    
-    4. In file ***PacManSprites.java***, add a function named getFruitSprite() to create the fruit image.
-    
-       ```java
-       public Sprite getFruitSprite() {
-           return loadSprite("/sprite/orange.png");
-       }
-       ```
-    
-    5. In file ***MapParser.java***, add a new swich case 'F' in function addSquare().
-    
-       ```java
-       case 'F':
-           Square fruitSquare = boardCreator.createGround();
-           grid[x][y] = fruitSquare;
-           levelCreator.createFruit().occupy(fruitSquare);
-           break;
-       ```
-    
-    6. In file ***/src/main/resources/board.txt***, add fruit symbol 'F' to the map.
-    
+  ```java
+  public Fruit createFruit() {
+      return new Fruit(FRUIT_VALUE, sprites.getFruitSprite());
+  }
+  ```
+  
+  ​		4. In file ***PacManSprites.java***, add a function named getFruitSprite() to create the fruit image.
+  
+  ```java
+  public Sprite getFruitSprite() {
+      return loadSprite("/sprite/orange.png");
+  }
+  ```
+  
+  ​		5. In file ***MapParser.java***, add a new swich case 'F' in function addSquare().
+  
+  ```java
+  case 'F':
+      Square fruitSquare = boardCreator.createGround();
+      grid[x][y] = fruitSquare;
+      levelCreator.createFruit().occupy(fruitSquare);
+      break;
+  ```
+  
+  ​		6. In file ***/src/main/resources/board.txt***, add fruit symbol 'F' to the map.
+  
     And here's the result:
-    
+  
     ![image-20200118204358601](https://tva1.sinaimg.cn/large/006tNbRwgy1gb1rtgqtnhj30a80bxjrl.jpg)
   
   
