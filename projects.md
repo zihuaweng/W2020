@@ -3,8 +3,8 @@
 | Team Name  | Desired Project | Approximate Size (LoC) | Reason for choosing in a couple of sentences/paragraphs |
 |------------|-----------------|------------------------|---------------------------------------------------------|
 |            |                 |                        |                                                         |
-|RuntimeTerrors  OpenRefine         500k                  | Familiarity with the languages used and adequate
-															  documentation                                                        |
+|RuntimeTerrors |  OpenRefine  |       500k     |        | Familiarity with the languages used and adequate |
+															  documentation                                                        
 |            |                 |                        |                                                         |
 |            |                 |                        |                                                         |
 |            |                 |                        |                                                         |
