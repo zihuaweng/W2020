@@ -149,7 +149,7 @@ Continue to explore JPacMan3 by answering the following questions:
 
   + Here comes the fruits. We earn 50 scores by eating 3 pellets and 1 melon, which performs as we wish.
 
-    ![](C:\Users\zeyuh\AppData\Roaming\Typora\typora-user-images\image-20200119002220478.png)
+    ![image-20200119002220478.png](https://i.loli.net/2020/01/21/xwDh3U27qIGoNSe.png)
 
-    ![image-20200119001832351](C:\Users\zeyuh\AppData\Roaming\Typora\typora-user-images\image-20200119001832351.png)
+    ![image-20200119001832351.png](https://i.loli.net/2020/01/21/pEhHLtlaqd9Krxy.png)
 
