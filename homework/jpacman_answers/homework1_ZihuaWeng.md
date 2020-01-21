@@ -69,4 +69,67 @@ private void startNPCs() {
 ```
 
 ### 3. if you wanted to add a fruit, which files would you need to change? 
+A fruit could be as a specific pellet with different pellet value and different sprite. So we could add fruit using the pellet code.
+#### jpacman/sprite/PacManSprites.java
+Here we add the fruit sprite which will help show the apple image. For example here we add apple.
+```Java
+    public Sprite getFruitSprite() {
+        return loadSprite("/sprite/apple.png");
+    }
+```
+#### jpacman/level/LevelFactory.java
+Here we create fruit as a pellet but has a different value and sprite.
+```Java
+    private static final int PELLET_VALUE = 10;
+    private static final int FRUIT_VALUE = 50;
+    
+    public Pellet createPellet() {
+        return new Pellet(PELLET_VALUE, sprites.getPelletSprite());
+    }
+    
+    public Pellet createFruit() {
+        return new Pellet(PELLET_VALUE, sprites.getFruitSprite());
+    }
+```
+#### board.txt
+Next, we need to change the layout of the maze and add location of fruit on the map. A indicates apple on the map.
+#######################    
+#..........#..........#     
+#.###.####.#.####.###.#    
+#.....................#    
+#.###.#.#######.#.###.#    
+#.....#....#....#.....#    
+#####.#### # ####.#####   
+    #.#    G    #.#      
+#####.# ##   ## #.#####    
+     .  #G G G#  .         
+#####.# ####### #.#####    
+    #.#         #.#        
+#####.#  #####  #.#####    
+#..........#..........#    
+#.###.####.#.####.###.#    
+#...#......P......#...#    
+###.#.#.#######.#.#.###    
+#..A..#....#....#.....#    
+#.########.#.########.#    
+#.....................#    
+#######################    
+
+
+#### jpacman/level/MapParser.java
+Add createFruit() to MapParser.
+```Java
+protected void addSquare(Square[][] grid, List<Ghost> ghosts,
+                             List<Square> startPositions, int x, int y, char c) {
+        switch (c) {
+            case ' ':
+                grid[x][y] = boardCreator.createGround();
+                break;
+            .......
+            case 'A':
+                Square pelletSquare1 = boardCreator.createGround();
+                grid[x][y] = pelletSquare1;
+                levelCreator.createFruit().occupy(pelletSquare1);
+                break;  
+```           
 
