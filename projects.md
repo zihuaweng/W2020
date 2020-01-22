@@ -1,22 +1,5 @@
 # Team Projects
 
-<<<<<<< HEAD
-| Team Name  | Desired Project | Approximate Size (LoC) | Reason for choosing in a couple of sentences/paragraphs |
-|------------|-----------------|------------------------|---------------------------------------------------------|
-|pay4grade   |runelite         |295k                    |This is a third party client for a mmo game called runescape, an old game that most people have heard of or played when they were young. It is being actively developed on by the community, and is very well maintained.|
-| Work, work |   Omni-Notes    |         106k           | We believe it's interesting and useful to learn about an application we could actually use everyday. The project has a proper code size and we would like to understand how those little features work. |
-|Git Good    |JUnit5           | 144k                   | We are interested in understanding the structure of JUnit and how testing frameworks are made since they are something we will use very frequently.
-| C#-er than you | Google/ExoPlayer | 270k              | We have interest in this app.                           |
-| XYZ       | spring boot     | 278k                   | Spring Boot makes it easy to create Spring-powered, production-grade applications and services with absolute minimum fuss. It takes an opinionated view of the Spring platform so that new and existing users can quickly get to the bits they need. |
-|RuntimeTerrors |  OpenRefine  |       500k             | Familiarity with the languages used and adequate documentation  |                                                      
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-|            |                 |                        |                                                         |
-=======
 | Team Name         | Desired Project  | Approximate Size (LoC) | Reason for choosing in a couple of sentences/paragraphs                                                                                                                                                                                              |
 | ----------------- | ---------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |Team_Costco        |Glide         |108K                    |Glide is a media management system with a simple and easy-to-use UI. This project can be implemented using Android Studio, making it runnable and testable. The PR and issue submissions are recent and are actively being maintained. The project has multiple testable demos and use-cases, which will help us comprehend the engineering behind some of its key features.
@@ -31,6 +14,5 @@
 | Foobar            | DrKLO/Telegram (for Android)  | 500k      |  We are interested to learn how messenger works.                                                                                                                                                                                                     |
 | Skateboard2Wheelchair | Elasitcsearch | 2146k | Elasticsearch is a distributed RESTful search engine built for the cloud. Reading it's code interested us. |
 |                   |                  |                        |                                                                                                                                                                                                                                                      |
->>>>>>> upstream/master
 
 LoC = Lines of Code, can be determined with the statistic plugin in intelij or various command line tools (e.g., [scc](https://github.com/boyter/scc) or [cloc](https://github.com/AlDanial/cloc))
