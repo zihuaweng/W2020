@@ -19,6 +19,7 @@ Continue to explore JPacMan3 by answering the following questions:
 **Steps:**
 
 1. Open the `jpacman3` project with IntelliJ IDEA, then hit the shift key twice and type `EmptySprite` in the dialog to locate `EmptySprite.java`.
+
    ![Search EmptySprite](1-1.png)
 
 2. Read `EmptySprite.java`. From the comment we can tell `EmptySprite` is a type of sprite that draws nothing on the screen. From the code we know that its width and height are both 0. But what is the purpose of designing this?
@@ -59,7 +60,11 @@ Continue to explore JPacMan3 by answering the following questions:
     }
     ```
 
-3. In order to know more about the role of `EmptySprite`, we may use the function 'Find Usages' provided by IntelliJ IDEA. ![EmptySprite usages](1-2.png) As we can see here, `EmptySprite` has 5 usages across the project in total.
+3. In order to know more about the role of `EmptySprite`, we may use the function 'Find Usages' provided by IntelliJ IDEA.
+
+   ![EmptySprite usages](1-2.png)
+
+   As we can see here, `EmptySprite` has 5 usages across the project in total.
 
 4. So let's start with `AnimatedSprite`. The class `AnimatedSprite` has a field named `END_OF_LOOP`, whose value equals to an `EmptySprite` object. So we can guess that the end of loop for an `AnimatedSprite` is an `EmptySprite`. Digging deeper, the field `END_OF_LOOP` has only 1 usage, which is located in the `currentSprite` method. This method returns the frame of the current index of an `AnimatedSprite`. In the method it assigns an `EmptySprite` to the result, so if the current index is not within the length of animation frames, it will be the end of the loop.
 
@@ -166,8 +171,11 @@ They define the frequency of a `Ghost`'s movement.
 **Steps:**
 
 1. Repeat the first step as we did in Q1. The results are shown below.
+
    ![Search MOVE_INTERVAL](2-1.png)
+
    ![Search INTERVAL_VARIATION](2-2.png)
+
    Interestingly, both of these 2 constants appear in the same files, and these files are all some kinds of ghost, judging from their package names. It makes me wonder it must have something to do with the `Ghost` class. To verify this, I navigated to the `Ghost.java` file and found that `Blinky`, `Clyde`, `Inky` and `Pinky` are all subclasses of `Ghost`. So these 2 properties must be something in common being a `Ghost`.
    ![Ghosts](2-3.png)
 
@@ -237,12 +245,15 @@ And you will get apples on the board instead of normal pellets.
 If we want to add some fruit without modifying existing code, we will have to do something more than replacing. Now we want to know how a pellet is loaded in the game, so the most intuitive option for us to start is to find usages of `pellet.png`.
 
 1. Find usages of `pellet.png`.
+
    ![pellet.png usages](3-2.png)
 
 2. Find usages of `getPelletSprite()`
+
    ![getPelletSprite() usages](3-3.png)
 
 3. Find usages of `createPellet()`
+
    ![createPellet() usages](3-4.png)
 
 4. In `MapParser.java`, we can find a method called `addSquare`. This method can be easily understood. It receives a `char` type param `c` and accord to that, it adds different square to the `grid`.
@@ -403,7 +414,8 @@ If we want to add some fruit without modifying existing code, we will have to do
    ```
 
 9. Run the game and the fruit appears.
-    ![Game with fruits](3-5.png)
+
+   ![Game with fruits](3-5.png)
 
 ## Submit
 
