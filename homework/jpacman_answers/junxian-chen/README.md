@@ -177,6 +177,7 @@ They define the frequency of a `Ghost`'s movement.
    ![Search INTERVAL_VARIATION](2-2.png)
 
    Interestingly, both of these 2 constants appear in the same files, and these files are all some kinds of ghost, judging from their package names. It makes me wonder it must have something to do with the `Ghost` class. To verify this, I navigated to the `Ghost.java` file and found that `Blinky`, `Clyde`, `Inky` and `Pinky` are all subclasses of `Ghost`. So these 2 properties must be something in common being a `Ghost`.
+
    ![Ghosts](2-3.png)
 
 2. I examined `Ghost.java` and found 2 variables named `moveInterval` and `intervalVariation`, in contrast of `MOVE_INTERVAL` and `INTERVAL_VARIATION`. So I assumed `MOVE_INTERVAL` and `INTERVAL_VARIATION` are special values for different types of `Ghost`, specified seperately in their own files. So my goal here is to figure out what `moveInterval` and `intervalVariation` are.
