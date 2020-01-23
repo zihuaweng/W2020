@@ -1,4 +1,4 @@
-1. Role of `EmptySprite`
+###1. Role of `EmptySprite`
 
    `EmptySprite` is an implementation of Sprite with zero height and width and that draws nothing.
 It is used in the `AnimatedSprite` class to display nothing at the end of a non-looping animated sprite's cycle:
@@ -21,7 +21,7 @@ It is used in the `AnimatedSprite` class to display nothing at the end of a non-
     }
 ```
 
-2. Role of `MOVE_INTERVAl` and INTERVAL_VARIATION
+###2. Role of `MOVE_INTERVAl` and INTERVAL_VARIATION
 
    `MOVE_INTERVAL` is the base interval between movements unique to each ghost NPC (Inky, Binky, Pinky, and Clyde).
 
@@ -68,7 +68,7 @@ It is used in the `AnimatedSprite` class to display nothing at the end of a non-
     }
 ```
 
-3. Adding a fruit:
+###3. Adding a fruit:
 
    `Fruit` should be added as a class that inherits from `Unit` in the `level` directory, similar to `Pellet`. Depending on how the Pellet is expected to interact with other classes, it might be more desirable to have `Fruit` inherit from `Pellet.`
 
