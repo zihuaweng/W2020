@@ -4,7 +4,7 @@ Issue description:
 
 Our project is a reference management software called "JabRef". For each entry, there is an entry editor panel where users could edit the fields (See figure 1). 
 
-![image-20200304111331624](C:\Users\shiku\AppData\Roaming\Typora\typora-user-images\image-20200304111331624.png)
+![](pic.png)
 
 ​                                                                               *Figure 1: Entry editor*
 
