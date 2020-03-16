@@ -1,0 +1,5 @@
+# Issue Description
+
+First of all, I'm sorry that we make this PR this late. The main reason is that spring-boot is developed very maturely and developers are really helpful on the GitHub. The result is that some easy issues are settled really quickly and what left are really tricky and hard to understand. What's more, as you may know, spring-boot is a framework for industry application, so some remaining open issue are about their app built on spring-boot, so it's really hard for us to address the issue and understand their questions.
+
+We only found [this](https://github.com/spring-projects/spring-boot/issues/19796) issue that we can some ideas what he is talking about. This issue states that `JarWriter.InputStreamEntryWriter` takes too much memory. I'm thinking about rewrite this part to save more memory but maybe more time as a trade-off.
